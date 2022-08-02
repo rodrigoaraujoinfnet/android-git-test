@@ -12,6 +12,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        // Get the Button view from the layout and assign a click
+        // listener to it.
+        val rollButton1: Button = findViewById(R.id.btnLancarD4)
+        rollButton1.setOnClickListener { btnLancarDados(this.btnLancarD4) }
     }
 
     fun btnLancarDados(v: View){
